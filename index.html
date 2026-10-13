@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dundici</title>
+  <meta name="description" content="Learn Italian from A2 to B1: lessons, flashcards, quizzes and audio.">
+  <meta name="theme-color" content="#C23B22">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23C23B22'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' font-weight='700' text-anchor='middle' fill='%23FFFBF3'%3ED%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#/" lang="it">
+        <span class="brand-text">Dundici</span>
+      </a>
+      <!-- Hidden by CSS unless an Italian voice is available -->
+      <button type="button" id="slow-toggle" class="chip speak-btn" aria-pressed="false">🐢 Slow</button>
+      <nav class="tabbar" aria-label="Main">
+        <a href="#/" data-page="home"><span aria-hidden="true">🏠</span><span>Home</span></a>
+        <a href="#/lessons" data-page="lessons"><span aria-hidden="true">📖</span><span>Lessons</span></a>
+        <a href="#/games" data-page="games"><span aria-hidden="true">🎲</span><span>Games</span></a>
+        <a href="#/flashcards" data-page="cards"><span aria-hidden="true">🗂️</span><span>Cards</span><b id="due-badge" class="badge-count" hidden>0</b></a>
+      </nav>
+    </div>
+  </header>
+
+  <p id="audio-note" class="note wrap" hidden>🔇 Audio isn't available here (no Italian voice was found). Try Chrome, Edge or Safari, or add an Italian voice in your device's language settings. Everything else works as normal.</p>
+
+  <main id="app" class="wrap" tabindex="-1">
+    <noscript><p class="card">This site needs JavaScript to run.</p></noscript>
+  </main>
+
+  <footer class="site-footer wrap"><p lang="it">Buono studio! 🍋</p></footer>
+
+  <dialog id="reset-dialog" aria-labelledby="reset-title">
+    <form method="dialog">
+      <h2 id="reset-title">Reset all progress?</h2>
+      <p>This will erase completed lessons, quiz scores, flashcard boxes and your streak. It can't be undone.</p>
+      <div class="actions">
+        <button class="btn btn-secondary" value="no">Cancel</button>
+        <button class="btn btn-danger" value="yes">Yes, reset</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Helpers & modules (classic scripts so it also works when opened straight from disk) -->
+  <script src="js/util.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/audio.js"></script>
+
+  <!-- Unit content: add new units here -->
+  <script src="data/unit-01.js"></script>
+  <script src="data/unit-02.js"></script>
+  <script src="data/unit-03.js"></script>
+  <script src="data/unit-04.js"></script>
+  <script src="data/unit-05.js"></script>
+  <script src="data/unit-06.js"></script>
+  <script src="data/unit-07.js"></script>
+  <script src="data/unit-08.js"></script>
+  <script src="data/unit-09.js"></script>
+  <script src="data/unit-10.js"></script>
+
+  <script src="js/lessons.js"></script>
+  <script src="js/flashcards.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="data/conjugations.js"></script>
+  <script src="data/story-01.js"></script>
+  <script src="data/story-02.js"></script>
+  <script src="data/story-03.js"></script>
+  <script src="data/story-04.js"></script>
+  <script src="data/story-05.js"></script>
+  <script src="data/story-06.js"></script>
+  <script src="data/story-07.js"></script>
+  <script src="data/story-08.js"></script>
+  <script src="data/story-09.js"></script>
+  <script src="data/story-10.js"></script>
+  <script src="js/games.js"></script>
+  <script src="js/game-words.js"></script>
+  <script src="js/game-sentence.js"></script>
+  <script src="js/game-duel.js"></script>
+  <script src="js/story.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
